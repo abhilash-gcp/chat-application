@@ -9,11 +9,11 @@ export class AuthService {
 
   private rootUrl = environment.api;
     private httpOptions: any;
-    private token = '';
+    private apikey = environment.api_key;
     private httpOptionsWithBearer: any;
     constructor(private http: HttpClient) {
         this.httpOptions = {
-            headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+            headers: new HttpHeaders({ 'Content-Type': 'application/json', 'x-api-key': this.apikey })
         };
         this.httpOptionsWithBearer = {
             headers: new HttpHeaders({ 'Content-Type': 'application/json', 'X-Frame-Options': 'DENY', Authorization: 'Bearer ' + '' })

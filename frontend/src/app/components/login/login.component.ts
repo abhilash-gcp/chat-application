@@ -40,14 +40,10 @@ export class LoginComponent implements OnInit {
     
     // this.spinner.show();
 
-    this.submissionArray = {};
-    this.submissionArray['email'] = data.email;
-    this.submissionArray['password'] = data.password;
+    this.submissionArray = {'email':data.email, 'password':data.password};
     // tslint:disable-next-line:max-line-length
     
-    console.log(this.submissionArray );
-    
-    this.submissionRequest = { 'request': { 'data': this.submissionArray } };
+    this.submissionRequest = this.submissionArray ;
     this.authService.login(this.submissionRequest).subscribe((data: any) => {
        
         const result = JSON.parse(data);
