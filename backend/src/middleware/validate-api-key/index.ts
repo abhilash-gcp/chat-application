@@ -12,9 +12,14 @@ import { envs } from '@config/env';
 export const validateApiKey = middleware((req: Request) => {
   const apiKey = req.headers['x-api-key'];
   if (!apiKey) {
+    console.log("test");
+    
     throw StatusError.forbidden('');
   }
   if (envs.apiKey !== apiKey) {
+    
+    console.log("test1");
     throw StatusError.forbidden('');
+   
   }
 });

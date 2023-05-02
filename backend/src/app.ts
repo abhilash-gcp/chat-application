@@ -18,7 +18,7 @@ class App {
     this.initializeMiddleware();
     this.initializeDBConnection();
     this.initializeRoutes();
-    this.overrideExpressResponse();
+    //this.overrideExpressResponse();
     this.initializeI18n();
   }
 
@@ -61,6 +61,8 @@ class App {
    * In this application we are using only MongoDB with helper lib `mongoose`
    */
   private initializeDBConnection(): void {
+    console.log("before mongo");
+    
     mongoConnect();
   }
 

@@ -3,6 +3,9 @@ import { IUser, IUserTokens } from '@modules/users/model';
 import { envs } from '@config/env';
 
 export const genrateUserTokens = (userDetails: IUser): IUserTokens => {
+
+  console.log("test3");
+  
   const accessTokenExpiry = envs.jwt.accessToken.expiry;
   const refreshTokenExpiry = envs.jwt.refreshToken.expiry;
   const accessToken = jwt.sign(
