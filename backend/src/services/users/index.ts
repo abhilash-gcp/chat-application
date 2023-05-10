@@ -4,6 +4,7 @@ import { getUserDetailsById } from './get-user-by-id';
 import { saveUser } from './save-user';
 import { verifyUserToken } from './verify-token';
 import { checkUniqueEmail } from './check-unique-email';
+import { getAllUserDetails } from './get-all-users';
 
 export {
   genrateUserTokens,
@@ -12,4 +13,5 @@ export {
   saveUser,
   verifyUserToken,
   checkUniqueEmail,
+  getAllUserDetails,
 };

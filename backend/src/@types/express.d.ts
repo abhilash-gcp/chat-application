@@ -6,5 +6,6 @@ declare namespace Express {
   interface Request {
     token: string | null;
     userDetails: IUserRequestObject | null;
+    allUserDetails: IUserRequestObject | null
   }
 }

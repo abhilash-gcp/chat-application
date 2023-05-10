@@ -15,11 +15,12 @@ class App {
   constructor() {
     this.app = express();
     this.setHeaders();
+    this.initializeI18n();
     this.initializeMiddleware();
     this.initializeDBConnection();
     this.initializeRoutes();
-    //this.overrideExpressResponse();
-    this.initializeI18n();
+    this.overrideExpressResponse();
+    
   }
 
   /**

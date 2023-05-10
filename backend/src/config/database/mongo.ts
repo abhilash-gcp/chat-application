@@ -13,6 +13,8 @@ export const connect = (): void => {
     connectioString = `mongodb://${envs.db.host}:${envs.db.port}/${envs.db.database}`;
   }
 
+  console.log("tt1");
+  
   const options = {
     autoIndex: false, // Don't build indexes
     maxPoolSize: 10, // Maintain up to 10 socket connections

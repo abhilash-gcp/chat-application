@@ -18,6 +18,6 @@ export const useLogin = controller(async (req: Request, res: Response): Promise<
   if (!isSame) {
     throw StatusError.badRequest('invaildEmailOrPassword');
   }
-
+  
   res.send(userService.genrateUserTokens(userDetails));
 });

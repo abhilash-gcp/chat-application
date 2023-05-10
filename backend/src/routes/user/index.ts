@@ -19,4 +19,6 @@ userRouter.get('/token', validateUserRefreshToken, userController.genrateNewToke
 
 userRouter.post('/signup', userSignup, userController.createUser);
 
+userRouter.get('/getAllUsers/:id', userController.getAllUsers);
+
 export { userRouter };
