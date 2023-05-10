@@ -5,7 +5,7 @@ import { environment } from '../../environments/environment';
 @Injectable({
   providedIn: 'root'
 })
-export class AuthService {
+export class UserService {
 
   private rootUrl = environment.api;
     private httpOptions: any;
@@ -20,7 +20,7 @@ export class AuthService {
         };
     }
 
-    login(val) {
-        return this.http.post(this.rootUrl + 'login', val , this.httpOptions);
+    getAllUsers(val) {
+        return this.http.get(this.rootUrl + 'getAllUsers' , this.httpOptions);
     }
 }
