@@ -16,3 +16,4 @@ export const getAllUsers = controller(
   res.send(allUserDetails);
   },
 );
+
