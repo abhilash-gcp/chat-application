@@ -13,4 +13,5 @@ export const getAllUserDetails = async (id: string): Promise<IUser[] | null> => 
   };
   const allUserDetails = await userModel.find(condition, selection);
   return allUserDetails;
+  
 };
