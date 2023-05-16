@@ -4,13 +4,13 @@
 
 export const environment = {
   production: false,
-  api: "http://34.132.156.128:4000/api/v1/user/",
-  domain: 'http://34.132.156.128:4200',
+  api: "http://localhost:4000/api/v1/user/",
+  domain: 'localhost:4200',
   secratePhrase: "MLWs70ff?D",
   key: "I!ndu(sNet!#Edi*Fy",
   api_key: "8qz5gaEXqqH98&Q5USDNHm$uHUq*xADs&Z*9Hxfq$6vE!&$p",
   salt: "JN1uBZNUK5nhIMBbBEwKISqQ9ioDyYPI",
-  frontend_url: 'http://34.132.156.128:4200/',
+  frontend_url: 'http://localhost:4200/',
   unauthorised_msg: 'WW91IGhhdmUgc3VjY2Vzc2Z1bGx5IGxvZ2dlZCBvdXQ=',
 };
 
