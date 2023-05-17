@@ -18,8 +18,7 @@ export const validateApiKey = middleware((req: Request) => {
   }
   if (envs.apiKey !== apiKey) {
     
-    console.log("test1");
+    console.log("test1",envs.apiKey);
     throw StatusError.forbidden('');
-   
   }
 });
