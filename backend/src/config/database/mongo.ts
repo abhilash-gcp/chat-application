@@ -15,7 +15,6 @@ export const connect = (): void => {
 
   console.log("tt1");
 
-  
 
   const options = {
     autoIndex: false, // Don't build indexes
