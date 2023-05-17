@@ -12,6 +12,7 @@ export const connect = (): void => {
   } else {
     connectioString = `mongodb://${envs.db.host}:${envs.db.port}/${envs.db.database}`;
   }
+  
   console.log("tt1");
   
   const options = {
