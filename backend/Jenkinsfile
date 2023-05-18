@@ -4,7 +4,6 @@ pipeline {
   tools {nodejs "nodejs"}
     
   stages {
-        
     stage('Build') {
       steps {
         dir('backend'){
