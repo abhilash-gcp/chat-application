@@ -13,7 +13,7 @@ userRouter.use(validateApiKey);
 
 
 
-userRouter.get('/login', userController.useLogin);
+userRouter.post('/logins', userController.useLogin);
 
 userRouter.get('/token', validateUserRefreshToken, userController.genrateNewToken);
 
