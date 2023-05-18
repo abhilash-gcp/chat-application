@@ -2,14 +2,6 @@ pipeline {
   agent any
     
   tools {nodejs "nodejs"}
-    
-  stages {
-        
-    stage('Git') {
-      steps {
-        git 'https://github.com/abhilash-gcp/chat-application.git'
-      }
-    }
      
     stage('Build') {
       steps {
