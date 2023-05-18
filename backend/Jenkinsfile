@@ -14,7 +14,7 @@ pipeline {
     stage('deploy to GCP') {
       steps {
         sshagent(credentials: ['ssh-key']) {
-            sh "ssh -o StrictHostKeyChecking=no -l mukherjeeabhilash8 35.192.185.129 && cd chat-application && cd backend && git pull origin dev"
+            sh "ssh -o StrictHostKeyChecking=no -l mukherjeeabhilash8 35.192.185.129 cd chat-application && cd backend"
         }
       }
     }
