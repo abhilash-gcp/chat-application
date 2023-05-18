@@ -7,9 +7,10 @@ pipeline {
         
     stage('Build') {
       steps {
-        dir('backend')
-        sh 'npm install'
-         sh '<<Build Command>>'
+        dir('backend'){
+          sh 'npm install'
+          sh '<<Build Command>>'
+        }
       }
     }  
 
