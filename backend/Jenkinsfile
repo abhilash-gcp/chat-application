@@ -12,4 +12,11 @@ pipeline {
       }
     }  
   }
+  stages {
+    stage('deploy to GCP') {
+      sshagent(['ssh-key']) {
+          sh 'ssh -i mukherjeeabhilash8 mukherjeeabhilash8@35.192.185.129'
+      }
+    }
+  }
 }
