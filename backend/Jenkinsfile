@@ -3,7 +3,7 @@ pipeline {
   environment {
       NODE_ENV="dev"
       NODE_PORT="4000"
-      API_KEY="8qz5gaEXqqH98&Q5USDNHm$uHUq*xADs&Z*9Hxfq$6vE!&$p"
+      API_KEY='8qz5gaEXqqH98&Q5USDNHm$uHUq*xADs&Z*9Hxfq$6vE!&$p'
       MONGO_HOST="cluster0.h7j4eqi.mongodb.net"
       MONGO_PORT="27017"
       MONGO_DATABASE="employeechat"
