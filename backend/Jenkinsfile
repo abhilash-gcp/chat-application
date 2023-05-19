@@ -12,7 +12,6 @@ pipeline {
       PASSWORD_SALT_ROUND="10"
       USER_ACCESS_TOKEN_SECRET="4s@U3N@@dgD6k9CwK8^j"
       ACCESS_TOKEN_EXPIRED="3600"
-      USER_REFRESH_TOKEN_SECRET="9dUdtv#&WVvZpX4FzNMj"
   }
   tools {nodejs "nodejs"}
     
