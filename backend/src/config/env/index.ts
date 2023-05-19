@@ -1,6 +1,9 @@
 import * as dotenv from 'dotenv';
 dotenv.config();
 
+console.log(process.env.NODE_ENV);
+
+
 export const envs = {
   env: process.env.NODE_ENV || 'dev',
   port: Number(process.env.NODE_PORT) || 4000,

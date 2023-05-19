@@ -16,6 +16,7 @@ export const validateApiKey = middleware((req: Request) => {
     
     throw StatusError.forbidden('');
   }
+  console.log("apiKey",envs.apiKey);
   if (envs.apiKey !== apiKey) {
     
     console.log("test1",envs.apiKey);
