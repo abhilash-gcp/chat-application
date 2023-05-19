@@ -8,7 +8,7 @@ app.listen(envs.port, (): any => {
   logger.info(`Express server listening on port ${envs.port}`);
 });
 
-console.log("env_file",process.env.NODE_ENV);
+console.log("env_file",process.env);
 
 
 
