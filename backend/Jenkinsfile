@@ -30,15 +30,11 @@ pipeline {
             sh "ssh -o StrictHostKeyChecking=no -l mukherjeeabhilash8 34.28.167.217"
         }
       }
+    }
+    stage('Pass secret as command line parameter') {
       steps {
         echo "Hello ${env.NODE_ENV}"
       }
-      
     }
-    // stage('Pass secret as command line parameter') {
-    //   steps {
-    //     sh 'NODE_ENV="$NODE_ENV" npm run dev'
-    //   }
-    // }
   }
 }
