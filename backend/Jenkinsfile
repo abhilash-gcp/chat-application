@@ -24,7 +24,7 @@ pipeline {
         }
       }
     }  
-    stage('Deploy to GCP') {
+    stage('DEPLOY TO GCP') {
       steps {
         sshagent(credentials: ['ssh-key']) {
             sh "ssh -o StrictHostKeyChecking=no -l mukherjeeabhilash8 34.133.189.154 ls"
