@@ -12,7 +12,7 @@ pipeline {
       steps {
           dir("$WORKING_DIR") {
             sh """
-                cat $ENV_PATH > ".env"
+               sudo cat $ENV_PATH > ".env"
             """
             sh "npm install"
             
