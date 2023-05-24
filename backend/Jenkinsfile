@@ -7,7 +7,7 @@ pipeline {
     stage('Build') {
       environment {
           ENV_PATH = credentials('session-2-env-test')
-          WORKING_DIR='/home/mukherjeeabhilash8/chat-application/backend'
+          WORKING_DIR='/home/mukherjeeabhilash8/chat-application'
       }
       steps {
           dir("$WORKING_DIR") {
